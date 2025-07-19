@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Base Style Start */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background:#f2f4f7;
+    font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Josefin Sans", sans-serif;
+
+}
+
+a,
+button {
+    all: unset;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+a:active,
+button:active {
+    scale: 0.9;
+}
+/* Base Style End */
+
+/* Utilities Style Start */
+@layer utilities{
+.my-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.my-hidden{
+    display:none;
+}
+}
+/* Utilities Style End */
